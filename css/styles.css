@@ -1,0 +1,750 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #0C0E2F;
+    color: #F9F7F1;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: rgba(12, 14, 47, 0.9);
+    border-bottom: 1px ssolid #D4AF37;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+}
+.logo {
+    width: 60px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.brand {
+    display: flex;
+    align-items: center;
+}
+.brand h1 {
+    font-family: 'Cinzel Decorative', sans-serif;
+    font-size: 1.5rem;
+    color: #D4AF37;
+}
+nav a {
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+nav a:hover, nav a.active {
+    color: #9FE8FF;
+}
+
+/* Hero */
+.hero::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(to top, rgba(12, 14, 47, 1), transparent);
+}
+.hero {
+    background: url('../images/banner.jpg') center/cover no-repeat;
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+.hero .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(12, 14, 47, 0.55);
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+.hero h2 {
+    font-family: 'Cinzel Decorative';
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #D4AF37;
+}
+.hero p {
+    font-family: 'Open Sans';
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 22px;
+    border-radius: 4px;
+    font-weight: 600;
+    margin: 0 8px;
+}
+.btn.gold {
+    background-color: #D4AF37;
+    color: #0C0E2F;
+    font-size: 20px;
+}
+.btn.outline {
+    border: 2px solid #D4AF37;
+    color: #D4AF37;
+    font-size: 20px;
+}
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* Aboout */
+.about {
+    text-align: center;
+    padding: 60px 0;
+}
+.about h2 {
+    font-family: 'Cinzel Decorative', sans-serif;
+    font-size: 2rem;
+    color: #D4AF37;
+    margin-bottom: 20px;
+}
+
+/* Guest */
+.guests {
+    background: rgba(20, 22, 60, 0.8);
+    padding: 60px 0;
+    text-align: center;
+}
+.guests h2 {
+    font-family: 'Cinzel Decorative', sans-serif;
+    font-size: 2rem;
+    color: #D4AF37;
+    margin-bottom: 30px;
+}
+.guest-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.guest-card {
+    background: #14163C;
+    border: 1px solid #D4AF37;
+    border-radius: 8px;
+    width: 250px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.guest-card h3 {
+    font-family: 'Cinzel Decorative', sans-serif;
+}
+.guest-card p {
+    font-size: .75rem;
+}
+.guest-card:hover {
+    transform: translate(-5px);
+    box-shadow: 0 0 15px #D4AF37;
+}
+.guest-card img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+/* Hightlights */
+.highlights {
+    padding: 60px 0;
+    text-align: center;
+}
+.highlights h2 {
+    font-family: 'Cinzel Decorative', sans-serif;
+    font-size: 2rem;
+    color: #D4AF37;
+    margin-bottom: 30px;
+}
+.highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250,1fr));
+    gap: 20px;
+}
+.highlight-card {
+    background: #14163C;
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid #D4AF37;
+    transition: box-shadow 0.3s ease;
+}
+.highlight-card:hover {
+    box-shadow: 0 0 15px #8A70FF;
+}
+
+/*Guest Badge*/
+.guest-badge {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 12px;
+    border: 1px solid #D4AF37;
+    border-radius: 20px;
+    color: #D4AF37;
+}
+
+/*Panels Section*/
+.panels {
+    text-align: center;
+    padding: 60px 0;
+}
+.panels h2 {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 2rem;
+    color: #D4AF37;
+    margin-bottom: 30px;
+}
+.panel-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.panel-card {
+    background: #14163C;
+    border: 1px solid #D4AF37;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: left;
+    transition:  transform .3s ease, box-shadow .3s ease;
+}
+.guest-socials {
+    margin-top: 10px;
+}
+.guest-socials a {
+    display: inline-block;
+    margin: 0 6px;
+    color: #D4AF37;
+    font-size: 1.2rem;
+    transition: transform .3s ease, color .3s ease, text-shadow .3s ease;
+}
+.guest-socials a:hover i.fa-twitter {
+    color: #1DA1F2;
+    text-shadow:  0 0 10px #1DA1F2;
+}
+.guest-socials a:hover i.fa-instagram {
+    color: #E4405F;
+    text-shadow:  0 0 10px #E4405F;
+}
+.panel-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px #8A70FF;
+}
+.panel-card h3 {
+    color: #9FE8FF;
+    margin-bottom: 10px;
+    font-family: 'Cinzel Decorative', serif;
+}
+.panel-card p {
+    margin-bottom: 8px;
+    font-family: 'Open Sans';
+}
+
+/* Meet the Artist Sections */
+.artists{
+    padding: 60px 0 80px;
+    text-align: center;
+}
+.artists h2 {
+    font-family: 'Cinzel Decorative', sans-serif;
+    font-size: 2rem;
+    color: #D4AF37;
+    margin-bottom: 10px;
+}
+.artists-intro {
+    color: #ccc;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+.artist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+.artist-card {
+    background: #14163C;
+    border: 1px solid #D4AF37;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+.artist-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px #8A70FF;
+}
+.artist-card img {
+    width: 50%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.artist-card h3 {
+    color: #9FE8FF;
+    font-family: 'Cinzel Decorative', sans-serif;
+    margin-bottom: 10px;
+}
+.artist-card p{
+    font-size: .95rem;
+    color: #e0e0e0;
+    margin-bottom: 10px;
+}
+
+/* Gallery */
+.gallery {
+    padding: 60px 0 80px;
+    text-align: center;
+}
+.gallery h2 {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 2rem;
+    color: #D4AF37;
+    margin-bottom: 10px;
+}
+.gallery-intro {
+    color: #ccc;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 4 / 3; /* Keeps all images consistent shape */
+    border-radius: 12px;
+    transition: transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1),
+                box-shadow 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures no stretching */
+    display: block;
+    filter: brightness(1);
+    transition: filter 0.5s ease;
+}
+.gallery-item:hover {
+    transform: scale(1.06);
+    box-shadow: 0 0 25px rgba(159, 232, 255, 0.5);
+    filter: brightness(1.1);
+    transition: transform .4s ease, filter .4s ease;
+}
+.gallery-item:hover img {
+    filter: brightness(1.2);
+}
+.gallery-item::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    box-shadow: 0 0 25px rgba(159, 232, 255, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.gallery-item:hover::after {
+    opacity: 1;
+}
+
+/* Schedule Page*/
+.schedule {
+    padding: 60px 0 80px;
+    text-align: center;
+}
+.schedule h2 {
+    font-family: 'Cinzel Decorative', sans-serif;
+    font-size: 2rem;
+    color: #D4AF37;
+    margin-bottom: 10px;
+}
+.schedule-intro {
+    color: #ccc;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+.schedule-days {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+.day-card {
+    background: #14163C;
+    border: 1px solid #D4AF37;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: left;
+    transition: transform .4s ease, filter .4s ease;
+}
+.day-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 25px rgba(159, 232, 255, 0.4);
+}
+.day-card h3 {
+    color: #9FE8FF;
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+.day-card h3 i {
+    color: #FFD700;
+    margin-right: 8px;
+}
+.day-card ul {
+    list-style: none;
+    padding: 0;
+}
+.day-card li {
+    margin-bottom: 10px;
+    color: #e0e0e0;
+}
+.day-card strong {
+    color: #FFD700;
+}
+.day-card em {
+    color: #9FE8FF;
+    font-style: normal;
+}
+
+/* Tournament Prize Section */
+.tournament-prize {
+    padding: 80px 0;
+    text-align: center;
+}
+.tournament-prize h2 {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 2.2rem;
+    color: #FFD700;
+    margin-bottom: 15px;
+}
+.prize-intro {
+    color: #ccc;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+}
+.prize-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.prize-image {
+    flex: 1 1 300px;
+    text-align: center;
+}
+.prize-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    border: 2px solid #FFD700;
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.5);
+    transition: transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1),
+                box-shadow 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.prize-image img:hover {
+    transform: scale(1.05) rotateY(5deg);
+    box-shadow: 0 0 35px rgba(255, 215, 0, 0.7);
+}
+
+.prize-details {
+    flex: 1 1 300px;
+    text-align: left;
+    background: #14163C;
+    border: 1px solid #9FE8FF;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(159, 232, 255, 0.15);
+}
+.prize-details h3 {
+    color: #9FE8FF;
+    font-family: 'Cinzel Decorative', serif;
+    margin-bottom: 15px;
+}
+.prize-details ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+.prize-details li {
+    margin-bottom: 10px;
+    color: #F9F7F1;
+    font-size: 1rem;
+}
+.prize-details li::before {
+    content: "• ";
+    color: #FFD700;
+}
+
+
+/* Ticket Packages Section */
+.tickets {
+    padding: 60px 0;
+    text-align: center;
+}
+.tickets h2 {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 2rem;
+    color: #FFD700;
+    margin-bottom: 10px;
+}
+.tickets-intro {
+    color: #ccc;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+/* Ticket Grid */
+.ticket-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+.ticket-card {
+    background: #14163C;
+    border: 1px solid #FFD700;
+    border-radius: 10px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1),
+                box-shadow 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.ticket-card:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 25px rgba(159, 232, 255, 0.4);
+}
+.ticket-card h3 {
+    font-family: 'Cinzel Decorative', serif;
+    color: #9FE8FF;
+    margin-bottom: 10px;
+}
+.ticket-card .price {
+    font-size: 1.8rem;
+    color: #FFD700;
+    margin-bottom: 20px;
+}
+.ticket-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    color: #F9F7F1;
+}
+.ticket-card li {
+    margin: 8px 0;
+}
+.ticket-bonus {
+    background: rgba(159, 232, 255, 0.1);
+    border-top: 1px solid #9FE8FF;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    color: #9FE8FF;
+    font-weight: 600;
+}
+.ticket-bonus i {
+    color: #FFD700;
+    margin-right: 6px;
+}
+
+/* Highlight (Premium) */
+.ticket-card.highlight {
+    background: linear-gradient(180deg, rgba(20, 22, 60, 1) 0%, rgba(28, 32, 78, 1) 100%);
+    border: 2px solid #9FE8FF;
+    transform: scale(1.02);
+}
+.ticket-card.highlight:hover {
+    transform: scale(1.06);
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.5);
+}
+
+
+/* Register Page */
+.register {
+    padding: 60px 0 80px;
+    text-align: center;
+}
+.register h2 {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 2rem;
+    color: #FFD700;
+    margin-bottom: 10px;
+}
+.register-intro {
+    color: #ccc;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+/* Form Styles */
+.register-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #14163C;
+    border: 1px solid #FFD700;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: left;
+    box-shadow: 0 0 20px rgba(159, 232, 255, 0.15);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    font-weight: 600;
+    color: #FFD700;
+    margin-bottom: 8px;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #9FE8FF;
+    background: #0C0E2F;
+    color: #F9F7F1;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #FFD700;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
+    outline: none;
+}
+
+/* Submit Button */
+.btn.large {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    font-size: 1.1rem;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.4s ease, transform 0.3s ease, box-shadow 0.4s ease;
+}
+.btn.gold.large {
+    background-color: #FFD700;
+    color: #0C0E2F;
+}
+.btn.gold.large:hover {
+    background: linear-gradient(90deg, #FFD700, #9FE8FF);
+    transform: scale(1.03);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+}
+
+/* FAQ Page */
+.faq {
+    padding: 60px 0 80px;
+    text-align: left;
+    max-width: 800px;
+}
+.faq h2 {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 2rem;
+    color: #FFD700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.faq-item {
+    background: #14163C;
+    border: 1px solid #9FE8FF;
+    border-radius: 10px;
+    padding: 20px 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px rgba(159, 232, 255, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.faq-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(159, 232, 255, 0.3);
+}
+.faq-item h3 {
+    font-family: 'Cinzel Decorative', serif;
+    color: #9FE8FF;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+.faq-item h3 i {
+    color: #FFD700;
+    margin-right: 8px;
+}
+.faq-item p {
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+.faq-item a {
+    color: #FFD700;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+.faq-item a:hover {
+    color: #9FE8FF;
+}
+
+
+/* Footer Navigation */
+footer {
+    background: #0B0D2A;
+    text-align: center;
+    padding: 30px 0 20px;
+    border-top: 1px solid #FFD700;
+}
+
+.footer-nav {
+    margin-bottom: 15px;
+}
+
+.footer-nav a {
+    color: #9FE8FF;
+    margin: 0 12px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: #FFD700;
+    text-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
+}
+
+footer p {
+    color: #ccc;
+    font-size: 0.9rem;
+    margin: 0;
+}
