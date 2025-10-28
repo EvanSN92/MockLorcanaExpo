@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register | Lorcana Legends Expo 2025</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+
+    <body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <div class="brand">
+                <img src="images/logo1.png" alt="Lorcana Legends Expo Logo" class="logo">
+                <h1>Lorcana Legends Expo</h1>
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="schedule.html">Schedule</a>
+                <a href="guests.html">Guests</a>
+                <a href="gallery.html">Gallery</a>
+                <a class="active" href="register.html">Register</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="particles"></div>
+        <div class="hero-content">
+            <h2>Register for the Expo</h2>
+            <p>Join fellow fans for three magical days of Lorcana wonder!</p>
+        </div>
+    </section>
+
+    <!-- Ticket Packages -->
+    <section class="tickets container">
+        <h2>Choose Your Pass</h2>
+        <p class="tickets-intro">
+            Whether you’re joining for the panels, tournaments, or the full VIP experience — every ticket unlocks a bit of Lorcana magic.
+        </p>
+
+        <div class="ticket-grid">
+
+            <!-- General -->
+            <div class="ticket-card">
+                <h3>General Admission</h3>
+                <p class="price">$45</p>
+                <ul>
+                    <li>✔ 3-Day Expo Access</li>
+                    <li>✔ Entry to Artist Alley</li>
+                    <li>✔ Collector’s Showcase</li>
+                    <li>✖ VIP Lounge Access</li>
+                    <li>✖ Exclusive Merchandise</li>
+                </ul>
+                <div class="ticket-bonus">
+                    <i class="fa-solid fa-id-badge"></i> Includes Event Badge
+                </div>
+            </div>
+
+            <!-- Premium -->
+            <div class="ticket-card highlight">
+                <h3>Premium Pass</h3>
+                <p class="price">$85</p>
+                <ul>
+                    <li>✔ All General Access Features</li>
+                    <li>✔ Priority Seating at Panels</li>
+                    <li>✔ Early Entry to Showcase</li>
+                    <li>✔ Exclusive Lorcana Promo Card</li>
+                    <li>✖ VIP Lounge</li>
+                </ul>
+                <div class="ticket-bonus">
+                    <i class="fa-solid fa-star"></i> Includes Badge + Lanyard
+                </div>
+            </div>
+
+            <!-- VIP -->
+            <div class="ticket-card">
+                <h3>VIP Experience</h3>
+                <p class="price">$150</p>
+                <ul>
+                    <li>✔ All Premium Features</li>
+                    <li>✔ Access to VIP Lounge</li>
+                    <li>✔ Exclusive Merch Bundle</li>
+                    <li>✔ Signed Lorcana Poster</li>
+                    <li>✔ Meet & Greet with Guests</li>
+                </ul>
+                <div class="ticket-bonus">
+                    <i class="fa-solid fa-gem"></i> Includes Badge, Lanyard & Gift Bag
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section class="register container">
+        <h2>Get Your Pass</h2>
+        <p class="register-intro">Fill out the form below to secure your ticket for Lorcana Legends Expo 2025.</p>
+
+        <form class="register-form" action="#" method="post">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="example@email.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="ticket">Ticket Type</label>
+                <select id="ticket" name="ticket" required>
+                <option value="">Select your pass</option>
+                <option value="general">General Admission – $45</option>
+                <option value="premium">Premium Pass – $85</option>
+                <option value="vip">VIP Experience – $150</option>
+                <option value="tournament">Tournament – Will Receive Email With Steps</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Special Requests or Notes</label>
+                <textarea id="message" name="message" rows="4" placeholder="Let us know if you have any special requests..."></textarea>
+            </div>
+
+            <button type="submit" class="btn gold large">Submit Registration</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="guests.html">Guests</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="register.html">Register</a>
+            <a href="faq.html">FAQ</a>
+        </div>
+        <p>© 2025 Lorcana Legends Expo | Designed by Evan Nelson</p>
+    </footer>
+
+</body>
+</html>
